@@ -1,3 +1,6 @@
+<?php
+include 'opdracht5.3.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,24 +13,24 @@
 </head>
 
 <body>
-    <a href="index.html">HOME</a>
-    <h1>Opdracht 5</h1>
-    <p>Deze opdracht is het vervolg op opdracht 4. Als opdracht 4 gelukt is, kun je dus gebruik maken van de code die je daar had, maar we gaan er iets aan toevoegen. Namelijk: we willen in het selectiemenu een specifieke gebruiker kunnen selecteren.</p>
-    <p>Zorg er voor dat het selectiemenu de user_id's van alle personen in je database toont, zonder de EDIT functionaliteit te verliezen.</p>
-    <h2>Wijzig hier de gegevens van een specifieke gebruiker:</h2>
-    <form action="opdracht5.2.php" method="post">
+<a href="index.html">HOME</a>
+<h1>Opdracht 5</h1>
+<p>Deze opdracht is het vervolg op opdracht 4. Als opdracht 4 gelukt is, kun je dus gebruik maken van de code die je
+    daar had, maar we gaan er iets aan toevoegen. Namelijk: we willen in het selectiemenu een specifieke gebruiker
+    kunnen selecteren.</p>
+<p>Zorg er voor dat het selectiemenu de user_id's van alle personen in je database toont, zonder de EDIT functionaliteit
+    te verliezen.</p>
+<h2>Wijzig hier de gegevens van een specifieke gebruiker:</h2>
+<form action="opdracht5.2.php" method="post">
     <label>User id:
-        <select id="user_id" name='user_id'>
-            <option value='1'>1</option>
-            <option value='2'>2</option>
-            <option value='3'>3</option>
-            <option value='4'>4</option>
+        <select id="select_user" name="user_id">
+            <?php idOptions(); ?>
         </select>
-        </label><br>
-        <label>Gebruikersnaam: <input name="username"></label><br>
-        <label>E-mail: <input type="email" name="email"></label><br>
-        <label>Wachtwoord: <input type="password" name="password"></label><br>
-        <input type="submit" name="submit"><br>
-    </form>
-    <!-- SCHRIJF HIER JE CODE -->
+    </label><br>
+    <label>Gebruikersnaam: <input id="username" name="username" value=""></label><br>
+    <label>E-mail: <input id="email" type="email" name="email" value=""></label><br>
+    <label>Wachtwoord: <input id="password" type="password" name="password" value=""></label><br>
+    <input type="submit" name="submit"><br>
+</form>
 </body>
+</html>
