@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $name = "root";
-$password = "";
-$dbname = "dbchallenge";
+$password = "root";
+$dbname = "sys";
 
 $id = $_POST['user_id'];
 $username = $_POST['username'];

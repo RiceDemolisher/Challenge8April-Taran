@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "dbchallenge";
+$password = "root";
+$dbname = "voer";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
 <th>Email</th>
 </tr>";
     while ($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["user_id"] . "</td><td>" . $row["username"] . " </td><td>" . $row["email"] . "</td></tr>";
+        echo "<td><td>" . $row["user_id"] . "</td><td>" . $row["username"] . " </td><td>" . $row["email"] . "</td></td>";
     }
     echo "</table>";
 } else {

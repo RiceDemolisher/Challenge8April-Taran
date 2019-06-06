@@ -12,7 +12,7 @@
 <body>
     <a href="index.html">HOME</a>
     <h1>Opdracht 1</h1>
-    <p>Maak een database aan met de naam “dbchallenge”. Zet daarin een tabel met de naam “users”. Geef deze tabel de volgende kolommen:</p>
+    <p>Maak een database aan met de naam “sys”. Zet daarin een tabel met de naam “users”. Geef deze tabel de volgende kolommen:</p>
     <ul>
         <li>user_id (int, auto-increment, primary)</li>
         <li>username (varchar, 50 tekens)

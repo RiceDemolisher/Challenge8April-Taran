@@ -1,7 +1,7 @@
 <?php
 function idOptions()
 {
-    $conn = mysqli_connect('localhost', 'root', '', 'dbchallenge') or die('Error connecting.');
+    $conn = mysqli_connect('localhost', 'root', 'root', 'sys') or die('Error connecting.');
     $query = "SELECT user_id FROM users";
     $result = mysqli_query($conn, $query);
     $data = mysqli_fetch_all($result);

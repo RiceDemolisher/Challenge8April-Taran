@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
 $name = "root";
-$password = "";
-$dbname = "dbchallenge";
+$password = "root";
+$dbname = "voer";
 
 $username = $_POST['username'];
 $email = $_POST['email'];
